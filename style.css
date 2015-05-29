@@ -1,0 +1,33 @@
+/* Styles go here */
+
+h1 {
+	text-align: center;
+	color: #3E3E3E;
+}
+
+* {
+	font-family: 'Nunito', sans-serif;
+}
+
+th {
+	color: #FFFFFF;
+	font-weight: lighter;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 140px;
+}
+
+td {
+	color: #3E3E3E;
+}
+
+table, th, td, tr, col {
+	border: 2px solid #DDDDDD;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heading {
+	background-color: #0074D9;
+}

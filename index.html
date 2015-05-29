@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script data-require="angular.js@1.3.10" data-semver="1.3.10" src="https://code.angularjs.org/1.3.10/angular.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <h1>Challenge Three: Countries Data - Population</h1>
+    <div ng-controller="oneController">
+      <table>
+        <colgroup>
+        <col>
+        </col>
+        </colgroup>
+        <th class="heading">Country</th>
+        <th class="heading"> 1960 </th>
+        <th class="heading"> 1970 </th>
+        <th class="heading"> 1980 </th>
+        <th class="heading"> 1990 </th>
+        <th class="heading"> 2000 </th>
+        <th class="heading"> 2010 </th>
+        <th class="heading">Growth %</th>
+        <tr ng-repeat="country in countries | orderBy:'name'">
+          <td>{{country.name}}</td>
+          <td>{{country[1960] | number}}</td>
+          <td>{{country[1970] | number}}</td>
+          <td>{{country[1980] | number}}</td>
+          <td>{{country[1990] | number}}</td>
+          <td>{{country[2000] | number}}</td>
+          <td>{{country[2010] | number}}</td>
+          <td>{{Math.ceil((((country[2010] - country[1960]) / country[1960]) * 100))}}%</td>
+        </tr>
+      </table>
+      <link href="http://fonts.googleapis.com/css?family=Nunito" id="google-font-selector" rel="stylesheet" type="text/css"></div>
+    </div>
+  </body>
+</html>
