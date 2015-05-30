@@ -29,7 +29,7 @@
           <td>{{country[1990] | number}}</td>
           <td>{{country[2000] | number}}</td>
           <td>{{country[2010] | number}}</td>
-          <td>{{Math.ceil((((country[2010] - country[1960]) / country[1960]) * 100))}}%</td>
+          <td>{{ (((country[2010] - country[1960]) / country[1960]) * 100) | number:0 }}%</td>
         </tr>
       </table>
       <link href="http://fonts.googleapis.com/css?family=Nunito" id="google-font-selector" rel="stylesheet" type="text/css"></div>
